@@ -62,7 +62,6 @@ const Dashboard: React.FC = () => {
           <UserAvatar source={{ uri: user.avatar_url }} />
         </ProfileButton>
       </Header>
-      <Button title="Sair" onPress={signOut} />
 
       <ProvidersList
         data={providers}

@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 
 export const Container = styled.View`
   justify-content: center;
-  padding: 0 30px ${Platform.OS === 'android' ? 150 : 40}px;
+  padding: 0 30px ${Platform.OS === 'android' ? 20 : 40}px;
 `;
 
 export const Title = styled.Text`
@@ -13,9 +13,13 @@ export const Title = styled.Text`
   margin: 24px 0;
 `;
 
-export const BackButton = styled.TouchableOpacity`
-  margin-top: 40px;
+export const Header = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 72px;
 `;
+export const BackButton = styled.TouchableOpacity``;
+export const LogoutButton = styled.TouchableOpacity``;
 
 export const UserAvatarButton = styled.TouchableOpacity`
   margin-top: 32px;
